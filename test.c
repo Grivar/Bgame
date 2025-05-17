@@ -1,14 +1,35 @@
 /*
-* I'm sorry babe...
+* x86_64-w64-mingw32-gcc -o Bgame.exe test.c
 */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <ctype.h>
+
+void Bgame(void);
 
 int main(void)
 {
 	srand(time(NULL));
+	char choice;
+	
+	printf("\033[34mWelcome to GUESS WHY I'M MAD simulator! 1.0\033[0m\n");
+
+	do{
+		printf("Maybe you will beat the odds this time? (y/n): ");
+		scanf(" %c", &choice);
+		choice = tolower(choice);
+	
+		if (choice == 'y'){
+			Bgame();
+		}
+	} while (choice != 'n');
+	return 0;
+}		
+
+
+	void Bgame(void){
 
 	system("cls");
 
@@ -50,19 +71,19 @@ int main(void)
 		aura++;
 		if (nb4t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	} else if (usint == 2){
 		aura = aura + 2;
 		if (nb3t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	} else if (usint == 3){
 		aura = aura + 4;
 		if (nb1t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	}
 	printf("----------------------------------------------\n");		
@@ -83,19 +104,19 @@ int main(void)
 		aura++;
 		if (nb4t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	} else if (usint == 2){
 		aura = aura + 2;
 		if (nb3t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	} else if (usint == 3){
 		aura = aura + 4;
 		if (nb1t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	}
 	printf("----------------------------------------------\n");		
@@ -115,19 +136,19 @@ int main(void)
 		aura++;
 		if (nb4t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	} else if (usint == 2){
 		aura = aura + 2;
 		if (nb3t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	} else if (usint == 3){
 		aura = aura + 4;
 		if (nb1t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	}
 	printf("----------------------------------------------\n");		
@@ -147,22 +168,21 @@ int main(void)
 		aura++;
 		if (nb4t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	} else if (usint == 2){
 		aura = aura + 2;
 		if (nb3t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	} else if (usint == 3){
 		aura = aura + 4;
 		if (nb1t5 <= 0){
 			printf("I KNEW YOU HATED ME!!!\n");
-			return 0;
+			return;
 		}
 	}
 	printf("You survived the evening! this time...\n");
 	printf("Your aura: %d\n", aura);
-	return 0;
-}
+	}
