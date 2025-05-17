@@ -14,7 +14,7 @@ int main(void)
 	srand(time(NULL));
 	char choice;
 
-	printf("\033[34mWelcome to GUESS WHY I'M MAD simulator! 1.0\033[0m\n");
+	printf("Welcome to GUESS WHY I'M MAD simulator! 1.0\n");
 
 	do{
 		printf("Maybe you will beat the odds this time? (y/n): ");
