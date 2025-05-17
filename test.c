@@ -38,8 +38,8 @@ int main(void)
 
 	// God knows my eyes hurts just from looking at this madness
 
-	const char *rn_wr[] = {"*She frowns at you*", "\"What do you mean?\"", "\"How was you day?\"", "\"I want a divorce\"",
-"\"I want kids\"", "*she is crying*", "\"Did you apply for any jobs today?\"", "\"I think i'm pregnant\"", ""};
+	const char *rn_wr[] = {"*She frowns at you*", "\"How was you day?\"", "\"I want a divorce\"",
+"\"I want kids\"", "*she is crying*", "\"Did you apply for any jobs today?\"", "\"I think i'm pregnant\"", "Don't you have a restraining order?"};
 	char Wsize = sizeof(rn_wr) / sizeof(rn_wr[0]);
 	int Wordw = (rand() % Wsize);
 
