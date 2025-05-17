@@ -10,7 +10,7 @@ int main(void)
 {
 	srand(time(NULL));
 
-	system("clear");
+	system("cls");
 
 	int rn_nb[] = {1,2,3,4,5};
 	int size = sizeof(rn_nb) / sizeof(rn_nb[0]);
