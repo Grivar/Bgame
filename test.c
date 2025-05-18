@@ -40,19 +40,21 @@ int main(void)
 
 	const char *rn_wr[] = {"*She frowns at you*", "\"How was you day?\"", "\"I want a divorce\"",
 "\"I want kids\"", "*she is crying*", "\"Did you apply for any jobs today?\"", "\"I think i'm pregnant\"", "Don't you have a restraining order?"};
-	char Wsize = sizeof(rn_wr) / sizeof(rn_wr[0]);
-	int Wordw = (rand() % Wsize);
 
 	const char *rn_1wr[] = {"*give her flowers*", "\"Are you ok?\"", "\"Love you\"", "I brought food", "*Give her a hug*", "\"I got the job!\"", "\"Will you marry me?\""};
-	char W1size = sizeof(rn_1wr) / sizeof(rn_1wr[0]);
-	int Word1 = (rand() % W1size);
 	
 	const char *rn_2wr[] = {"\"meow\"", "*yawn*", "\"Just chill\"", "\"Red calender again huh!?\"", "\"I took second mortgage\"", "*do the thing*"};
-	char W2size = sizeof(rn_2wr) / sizeof(rn_2wr[0]);
-	int Word2 = (rand() % W2size);
 
 	const char *rn_3wr[] = {"*ignore her*", "\"I want a divorce\"", "\"Come on! It was just a cat.\"", "\"You kind of look like Colette from Ratatouille\"", "\"Do you know this guy in the closet?\"", "*do a backflip*"};
+
+	char Wsize = sizeof(rn_wr) / sizeof(rn_wr[0]);
+	char W1size = sizeof(rn_1wr) / sizeof(rn_1wr[0]);
+	char W2size = sizeof(rn_2wr) / sizeof(rn_2wr[0]);
 	char W3size = sizeof(rn_3wr) / sizeof(rn_3wr[0]);
+
+	int Wordw = (rand() % Wsize);
+	int Word1 = (rand() % W1size);
+	int Word2 = (rand() % W2size);
 	int Word3 = (rand() % W3size);
 
 	int nb4t5 = (rand() % size) -1;
